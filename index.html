@@ -23,25 +23,26 @@
       <section class="input_section">
         <h2>Masukkan Buku Baru</h2>
         <form id="inputBook">
-          <div class="input">
+          <div class="input" id="sectionTitle">
             <label for="inputBookTitle">Judul</label>
             <input id="inputBookTitle" type="text" required />
           </div>
-          <div class="input">
+
+          <div class="input" id="sectionAuthor">
             <label for="inputBookAuthor">Penulis</label>
             <input id="inputBookAuthor" type="text" required />
           </div>
-          <div class="input">
+          <div class="input" id="sectionYear">
             <label for="inputBookYear">Tahun</label>
             <input id="inputBookYear" type="number" required />
           </div>
           <div class="input_inline">
             <label for="inputBookIsComplete">Selesai dibaca</label>
-            <input id="inputBookIsComplete" type="checkbox" />
+            <input id="inputBookIsComplete" type="radio" name="pilihan" />
+            <label for="inputBookIsUncomplete">Belum Selesai dibaca</label>
+            <input id="inputBookIsUncomplete" type="radio" name="pilihan" />
           </div>
-          <button id="bookSubmit" type="submit">
-            Masukkan Buku ke rak <span>Belum selesai dibaca</span>
-          </button>
+          <button id="bookSubmit" type="submit">Masukkan Buku ke rak</button>
         </form>
       </section>
 
@@ -54,37 +55,37 @@
         </form>
       </section>
 
-      <section class="book_shelf">
-        <h2>Belum selesai dibaca</h2>
+      <section class="book_shelf" id="bookShelfUncompleted">
+        <h2 id="uncompletedH2">Belum selesai dibaca</h2>
 
         <div id="incompleteBookshelfList" class="book_list">
-          <!--      <article class="book_item">-->
-          <!--        <h3>Book Title</h3>-->
-          <!--        <p>Penulis: John Doe</p>-->
-          <!--        <p>Tahun: 2002</p>-->
-          <!--    -->
-          <!--        <div class="action">-->
-          <!--          <button class="green">Selesai dibaca</button>-->
-          <!--          <button class="red">Hapus buku</button>-->
-          <!--        </div>-->
-          <!--      </article>-->
+          <!-- <article class="book_item">
+            <h3>Book Title</h3>
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+              <button class="red">Hapus buku</button>
+            </div>
+          </article> -->
         </div>
       </section>
 
-      <section class="book_shelf">
-        <h2>Selesai dibaca</h2>
+      <section class="book_shelf" id="bookShelfCompleted">
+        <h2 id="completedH2">Selesai dibaca</h2>
 
         <div id="completeBookshelfList" class="book_list">
-          <!--      <article class="book_item">-->
-          <!--        <h3>Book Title</h3>-->
-          <!--        <p>Penulis: John Doe</p>-->
-          <!--        <p>Tahun: 2002</p>-->
-          <!--        -->
-          <!--        <div class="action">-->
-          <!--          <button class="green">Belum selesai di Baca</button>-->
-          <!--          <button class="red">Hapus buku</button>-->
-          <!--        </div>-->
-          <!--      </article>-->
+          <!-- <article class="book_item">
+            <h3>Book Title</h3>
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Belum selesai di Baca</button>
+              <button class="red">Hapus buku</button>
+            </div>
+          </article> -->
         </div>
       </section>
     </main>
